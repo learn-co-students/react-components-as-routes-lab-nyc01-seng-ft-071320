@@ -51,7 +51,7 @@ let directors = [
   }
 ]
 
-module.exports = {
+export default {
   movies,
   actors,
   directors
