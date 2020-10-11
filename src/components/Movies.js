@@ -1,11 +1,21 @@
 import React from 'react';
 import { movies } from '../data';
 
-const Movies = () => {
+const Movies = (props) => {
   return (
+    <>
     <div>
-        {/*{code here}*/}
+      <h1>Movies Page</h1>
     </div>
+    <div>
+      Movie title: {props.movie.title}
+      Time: {props.movie.time}
+      Genres:
+      <ul> 
+        <li> {props.movie.genres} </li>
+      </ul>
+    </div>
+    </>
   );
 };
 
